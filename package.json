@@ -42,9 +42,8 @@
     "@nuxtjs/svg": "^0.1.12",
     "@nuxtjs/tailwindcss": "^4.1.1",
 
-    "@snackbar/core": "^1.7.0",
-    "@teamnovu/nuxt-breaky": "^1.2.2",
-    "@types/crawler": "^1.2.1",
+    "@types/fs-extra": "^9.0.11",
+    "babel-eslint": "^10.1.0",
 
     "chart.js": "^2.9.4",
     "clipboard": "^2.0.8",
