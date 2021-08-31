@@ -54,7 +54,6 @@ export default {
       ]
     }
   },
-  modules: ['@nuxt/http', '@nuxt/content', 'nuxt-i18n', 'vue-scrollto/nuxt'],
   pwa: {
     manifest: {
       name: 'Emrin Angelov',
@@ -85,14 +84,6 @@ export default {
   css: [
     '~/assets/css/main.scss',
     'node_modules/lite-youtube-embed/src/lite-yt-embed.css'
-  ],
-  plugins: [
-    '~/plugins/i18n',
-    '~/plugins/directives',
-    '~/plugins/intersection-observer.client.js',
-    '~/plugins/vue-observe-visibility.client.js',
-    '~/plugins/vue-scrollactive',
-    '~/plugins/youtube.client.js'
   ],
   env: {
     DEPLOY_PRIME_URL: process.env.DEPLOY_PRIME_URL || false,
