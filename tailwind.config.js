@@ -149,7 +149,7 @@ module.exports = {
           addVariant(`${mode}:${pseudo}`, ({ modifySelectors, separator }) => {
             modifySelectors(({ className }) => {
               return `.${mode}-mode .${e(
-                `${mode}${separator}${pseudo}${separator}${className}`
+                  `${mode}${separator}${pseudo}${separator}${className}`
               )}::${pseudo}`
             })
           })
@@ -162,7 +162,7 @@ module.exports = {
           addVariant(`${mode}:${state}`, ({ modifySelectors, separator }) => {
             modifySelectors(({ className }) => {
               return `.${mode}-mode .${e(
-                `${mode}${separator}${state}${separator}${className}`
+                  `${mode}${separator}${state}${separator}${className}`
               )}:${state}`
             })
           })
