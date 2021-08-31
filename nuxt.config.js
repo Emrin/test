@@ -100,10 +100,10 @@ export default {
       }
     }
   },
-  // css: [
-  //   '~/assets/css/main.scss',
-  //   'node_modules/lite-youtube-embed/src/lite-yt-embed.css'
-  // ],
+  css: [
+    // '~/assets/css/main.scss',
+    'node_modules/lite-youtube-embed/src/lite-yt-embed.css'
+  ],
   plugins: [
     '~/plugins/i18n',
     '~/plugins/directives',
