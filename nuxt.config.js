@@ -61,6 +61,64 @@ export default {
       theme_color: '#379bea'
     }
   },
+  env: {
+    DEPLOY_PRIME_URL: process.env.DEPLOY_PRIME_URL || false,
+    URL: process.env.URL || false,
+    DOC_SEARCH_API_KEY: process.env.DOC_SEARCH_API_KEY || 'wasdwasd',
+    NUXT_API: process.env.NUXT_API || 'https://api.emrinangelov.com'
+  },
+  publicRuntimeConfig: {
+    nuxtLocale: process.env.NUXT_LOCALE || 'en',
+    nuxtVersion: '4.0.4',
+    nuxtStars: '42K+'
+  },
+  loading: { color: '#379bea' },
+  generate: {
+    fallback: false,
+    routes: ['/', '404']
+  },
+  tailwindcss: {
+    exposeConfig: true
+  },
+  i18n: {
+    // differentDomains: true,
+    strategy: 'no_prefix',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        file: 'en-US.js',
+        name: 'English',
+        domain:
+          process.env.CONTEXT === 'development'
+            ? 'localhost:3000'
+            : 'https://emrinangelov.com'
+        // domain: process.env.NODE_ENV === 'production' ? 'https://emrinangelov.com' : 'localhost:3000'
+        // domain: 'https://emrinangelov.com'
+      },
+      {
+        code: 'fr',
+        iso: 'fr-FR',
+        file: 'fr-FR.js',
+        name: 'Français',
+        domain:
+          process.env.CONTEXT === 'development'
+            ? 'fr.localhost:3000'
+            : 'https://fr.emrinangelov.com'
+        // domain: process.env.NODE_ENV === 'production' ? 'https://fr.emrinangelov.com' : 'fr.localhost:3000'
+        // domain: 'https://fr.emrinangelov.com'
+      }
+    ],
+    vueI18n: {
+      fallbackLocale: 'en'
+    },
+    defaultLocale: 'en',
+    parsePages: false,
+    detectBrowserLanguage: false,
+    seo: false,
+    lazy: true,
+    langDir: 'i18n/'
+  },
   build: {
     plugins: [
       new webpack.IgnorePlugin({
