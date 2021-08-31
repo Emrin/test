@@ -1,17 +1,6 @@
 export default {
   target: 'static',
-  ssr: true,
-  components: [
-    '~/components/templates',
-    '~/components/global',
-    '~/components/atoms',
-    '~/components/molecules',
-    '~/components/organisms'
-  ],
-  colorMode: {
-    preference: 'light' // disable system
-  }
-
+  ssr: true
   // // For deploying at Github Pages without a CNAME
   // router: {
   //   base: process.env.NODE_ENV === 'production' ? '/emrinangelov.com/' : '/'
