@@ -1,7 +1,8 @@
 <template>
   <div>
-    <h1>Welcome</h1>
-    <p>HI THERE</p>
+    <main>
+      <Nuxt />
+    </main>
   </div>
 </template>
 
