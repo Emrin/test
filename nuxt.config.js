@@ -54,6 +54,24 @@ export default {
       ]
     }
   },
+  // buildModules: [
+  //   // https://github.com/teamnovu/nuxt-breaky
+  //   '@teamnovu/nuxt-breaky',
+  //   // https://github.com/nuxt-community/eslint-module
+  //   '@nuxtjs/eslint-module',
+  //   // https://github.com/nuxt-community/color-mode-module
+  //   '@nuxtjs/color-mode',
+  //   // https://github.com/nuxt-community/netlify-files-module
+  //   '@nuxtjs/netlify-files',
+  //   // https://github.com/nuxt-community/style-resources-module
+  //   '@nuxtjs/style-resources',
+  //   // https://github.com/nuxt-community/svg-module
+  //   '@nuxtjs/svg',
+  //   // https://github.com/Atinux/nuxt-tailwindcss/
+  //   '@nuxtjs/tailwindcss',
+  //   // https://pwa.nuxtjs.org
+  //   '@nuxtjs/pwa'
+  // ],
   modules: ['@nuxt/http', '@nuxt/content', 'nuxt-i18n', 'vue-scrollto/nuxt'],
   pwa: {
     manifest: {
@@ -62,6 +80,13 @@ export default {
       theme_color: '#379bea'
     }
   },
+  // components: [
+  //   '~/components/templates',
+  //   '~/components/global',
+  //   '~/components/atoms',
+  //   '~/components/molecules',
+  //   '~/components/organisms'
+  // ],
   colorMode: {
     preference: 'light' // disable system
   },
@@ -75,6 +100,18 @@ export default {
       }
     }
   },
+  // css: [
+  //   '~/assets/css/main.scss',
+  //   'node_modules/lite-youtube-embed/src/lite-yt-embed.css'
+  // ],
+  plugins: [
+    '~/plugins/i18n',
+    '~/plugins/directives',
+    '~/plugins/intersection-observer.client.js',
+    '~/plugins/vue-observe-visibility.client.js',
+    '~/plugins/vue-scrollactive',
+    '~/plugins/youtube.client.js'
+  ],
   env: {
     DEPLOY_PRIME_URL: process.env.DEPLOY_PRIME_URL || false,
     URL: process.env.URL || false,
