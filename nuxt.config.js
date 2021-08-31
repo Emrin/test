@@ -74,10 +74,6 @@ export default {
       }
     }
   },
-  css: [
-    '~/assets/css/main.scss',
-    'node_modules/lite-youtube-embed/src/lite-yt-embed.css'
-  ],
   env: {
     DEPLOY_PRIME_URL: process.env.DEPLOY_PRIME_URL || false,
     URL: process.env.URL || false,
