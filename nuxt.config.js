@@ -54,24 +54,24 @@ export default {
       ]
     }
   },
-  // buildModules: [
-  //   // https://github.com/teamnovu/nuxt-breaky
-  //   '@teamnovu/nuxt-breaky',
-  //   // https://github.com/nuxt-community/eslint-module
-  //   '@nuxtjs/eslint-module',
-  //   // https://github.com/nuxt-community/color-mode-module
-  //   '@nuxtjs/color-mode',
-  //   // https://github.com/nuxt-community/netlify-files-module
-  //   '@nuxtjs/netlify-files',
-  //   // https://github.com/nuxt-community/style-resources-module
-  //   '@nuxtjs/style-resources',
-  //   // https://github.com/nuxt-community/svg-module
-  //   '@nuxtjs/svg',
-  //   // https://github.com/Atinux/nuxt-tailwindcss/
-  //   '@nuxtjs/tailwindcss',
-  //   // https://pwa.nuxtjs.org
-  //   '@nuxtjs/pwa'
-  // ],
+  buildModules: [
+    // https://github.com/teamnovu/nuxt-breaky
+    // '@teamnovu/nuxt-breaky',
+    // https://github.com/nuxt-community/eslint-module
+    '@nuxtjs/eslint-module',
+    // https://github.com/nuxt-community/color-mode-module
+    '@nuxtjs/color-mode',
+    // https://github.com/nuxt-community/netlify-files-module
+    '@nuxtjs/netlify-files',
+    // https://github.com/nuxt-community/style-resources-module
+    '@nuxtjs/style-resources',
+    // https://github.com/nuxt-community/svg-module
+    '@nuxtjs/svg',
+    // https://github.com/Atinux/nuxt-tailwindcss/
+    '@nuxtjs/tailwindcss',
+    // https://pwa.nuxtjs.org
+    '@nuxtjs/pwa'
+  ],
   modules: ['@nuxt/http', '@nuxt/content', 'nuxt-i18n', 'vue-scrollto/nuxt'],
   pwa: {
     manifest: {
