@@ -61,6 +61,23 @@ export default {
       theme_color: '#379bea'
     }
   },
+  colorMode: {
+    preference: 'light' // disable system
+  },
+  plausible: {
+    domain: 'emrinangelov.com'
+  },
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css'
+      }
+    }
+  },
+  css: [
+    '~/assets/css/main.scss',
+    'node_modules/lite-youtube-embed/src/lite-yt-embed.css'
+  ],
   env: {
     DEPLOY_PRIME_URL: process.env.DEPLOY_PRIME_URL || false,
     URL: process.env.URL || false,
@@ -126,6 +143,13 @@ export default {
         contextRegExp: /moment$/
       })
     ]
+  },
+  hooks: {
+    'content:file:beforeInsert': item => {
+      const stats = require('reading-time')(item.text)
+
+      item.readingTime = stats
+    }
   }
 
   // // For deploying at Github Pages without a CNAME
