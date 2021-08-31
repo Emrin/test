@@ -54,6 +54,7 @@ export default {
       ]
     }
   },
+  modules: ['@nuxt/http', '@nuxt/content', 'nuxt-i18n', 'vue-scrollto/nuxt'],
   pwa: {
     manifest: {
       name: 'Emrin Angelov',
