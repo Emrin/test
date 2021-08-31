@@ -80,13 +80,13 @@ export default {
       theme_color: '#379bea'
     }
   },
-  // components: [
-  //   '~/components/templates',
-  //   '~/components/global',
-  //   '~/components/atoms',
-  //   '~/components/molecules',
-  //   '~/components/organisms'
-  // ],
+  components: [
+    //   '~/components/templates',
+    //   '~/components/global',
+    //   '~/components/atoms',
+    //   '~/components/molecules',
+    //   '~/components/organisms'
+  ],
   colorMode: {
     preference: 'light' // disable system
   },
