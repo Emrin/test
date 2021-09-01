@@ -101,7 +101,7 @@ export default {
     }
   },
   css: [
-    // '~/assets/css/main.scss',
+    '~/assets/css/main.scss',
     'node_modules/lite-youtube-embed/src/lite-yt-embed.css'
   ],
   plugins: [
